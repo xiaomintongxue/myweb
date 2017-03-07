@@ -1,0 +1,10 @@
+[core]
+	bare = true
+	repositoryformatversion = 0
+	filemode = false
+	symlinks = false
+	ignorecase = true
+[remote "myweb"]
+	url = https://github.com/xiaomintongxue
+	fetch = +refs/heads/*:refs/remotes/myweb/*
+	pushurl = https://github.com/xiaomintongxue
