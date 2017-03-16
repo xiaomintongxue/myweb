@@ -18,6 +18,8 @@ from django.contrib import admin
 from my_web import views
 
 urlpatterns =[
+	url(r'^$',views.index,name='index'),
     url(r'^admin/', admin.site.urls),
-    url(r'^index/$',views.MyFirstView),
+    url(r'(?P<question_id>[0-9]+)/$',views.detail,name='detail'),
+    
 ]
